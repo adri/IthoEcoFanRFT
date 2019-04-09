@@ -50,6 +50,9 @@ void setup(void) {
 	
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
+	  
+  // Set wifi hostname	  
+    WiFi.hostname("Itho");
     Serial.print(".");
     delay(500);
   }
